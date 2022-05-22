@@ -1,0 +1,87 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(128, 37, 255)
+Frame.Position = UDim2.new(0.124151893, 0, 0.18577075, 0)
+Frame.Size = UDim2.new(0, 583, 0, 380)
+Frame.Active = true
+Frame.Draggable = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(106, 0, 255)
+TextLabel.Size = UDim2.new(0, 582, 0, 50)
+TextLabel.Font = Enum.Font.SpecialElite
+TextLabel.Text = "Solars Da hood GUI!"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 33.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(116, 0, 255)
+TextLabel_2.Position = UDim2.new(0, 0, 0.906553805, 0)
+TextLabel_2.Size = UDim2.new(0, 582, 0, 35)
+TextLabel_2.Font = Enum.Font.SpecialElite
+TextLabel_2.Text = "Gui made by Solar's-Scripts's#0526 "
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 30.000
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(183, 35, 255)
+TextButton.Position = UDim2.new(0.0343053192, 0, 0.189473689, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.Code
+TextButton.Text = "Lock (press Q To work.)"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 15.000
+TextButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://pastebin.com/raw/A9U2qU5p"), true))() 
+end)
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(183, 35, 255)
+TextButton_2.Position = UDim2.new(0.620926321, 0, 0.189473689, 0)
+TextButton_2.Size = UDim2.new(0, 200, 0, 50)
+TextButton_2.Font = Enum.Font.Code
+TextButton_2.Text = "Tool Reach "
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+TextButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://pastebin.com/raw/nYdMQ2hP"), true))()
+end)
+
+TextButton_3.Parent = Frame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(183, 35, 255)
+TextButton_3.Position = UDim2.new(0.327615768, 0, 0.410526335, 0)
+TextButton_3.Size = UDim2.new(0, 200, 0, 50)
+TextButton_3.Font = Enum.Font.Code
+TextButton_3.Text = "Fly (X) (Not Working)"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 14.000
+
+TextButton_4.Parent = Frame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(183, 35, 255)
+TextButton_4.Position = UDim2.new(0.147512853, 0, 0.652631581, 0)
+TextButton_4.Size = UDim2.new(0, 410, 0, 50)
+TextButton_4.Font = Enum.Font.Code
+TextButton_4.Text = "Big Head script (Must Need \"City Life Woman\" Bundle/Head"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextSize = 14.000
+TextButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/sysGhost-aka-BiKode/Scripts2022/main/BigHeadV3_Unpatched", true))()
+end)
